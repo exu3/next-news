@@ -1,15 +1,14 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Toolbar } from '../components/toolbar'
+import Weather from "../components/weather";
 
 export default function Home() {
   return (
     <div className="page-container">
-      <Toolbar />
-      <div className={styles.main}>
-        <h1>Next.js News App</h1>
-        <h3>The cooolest news web app ever.</h3>
+      <div>
+        <h1>
+          Welcome, <span>Ella</span>!
+        </h1>
+        <Weather />
       </div>
     </div>
-  )
+  );
 }
